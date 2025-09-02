@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      background: yellow;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Digital Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="helan.jpg" alt="Profile Photo">
+    <p>Hello! I am a student passionate about web development and design. This is my digital portfolio showcasing my skills and projects.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>✔ HTML, CSS, JavaScript</p>
+    <p>✔ C / C++ / Java</p>
+    <p>✔ Problem Solving</p>
+    <p>✔ Team Collaboration</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal website to showcase my profile and projects.</p>
+    </div>
+    <div class="project">
+      <h3>Student Management System</h3>
+      <p>A web app to manage student records using JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="Contact">
+    <h2>Contact Me</h2>
+    <p>Email: princyhelankamaliya@gmail.com</p>
+    <p>Phone: +91 9884654620</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Princy Helan Kamaliya | Designed by Me</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").innerHTML = "Thanks for visiting my portfolio!";
+    }
+  </script>
+
+</body>
+</html>
